@@ -1,0 +1,13 @@
+<?php
+$i = 3;
+$j = 1;
+echo "<h4>3단 구구단 표 만들기<h4><hr>";
+for ($j; $j<9; $j++){
+    for($k=0; $k<9; $k++){
+        
+    }
+    $result = $i*$j;
+    echo"  <table border = '1'>
+    <th width = '160'>$i x $j = $result</th>
+    </table>";
+}

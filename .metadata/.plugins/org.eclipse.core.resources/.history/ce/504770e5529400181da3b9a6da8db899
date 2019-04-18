@@ -1,0 +1,37 @@
+<?php
+//ch06_03_insert.php
+
+    $conn = mysql_connect("localhost", "jin", "1234");//mysql에 접근
+    $dbconn =mysql_select_db("mirim", $conn);
+    
+    $name = $_POST['name'];
+    $sub1 = $_POST['sub1'];
+    $sub2 = $_POST['sub2'];
+    $sub3 = $_POST['sub3'];
+    $sub4 = $_POST['sub4'];
+    $sub5 = $_POST['sub5'];
+
+    //$sum = $_POST['sub1']+$_POST['sub2']+$_POST['sub3']+$_POST['sub4']+$_POST['sub5'];
+    $sum = $sub1+$sub2+$sub3+$sub4+$sub5;
+    $avg = $sum/5;
+
+    $sql = "insert into stud_score (name, sub1, sub2, sub3, sub4, sub5, sum, avg)
+    values('$name',$sub1,$sub2,$sub3,$sub4,$sub5,$sum,$avg)";
+    $result = mysql_query($sql, $conn);
+
+    /*echo $_POST['name']."님의 성적을 입력하셨습니다. <br>";
+    echo "과목1 : ".$_POST['sub1']."<br>";
+    echo "과목2 : ".$_POST['sub2']."<br>";
+    echo "과목3 : ".$_POST['sub3']."<br>";
+    echo "과목4 : ".$_POST['sub4']."<br>";
+    echo "과목5 : ".$_POST['sub5']."<br>";
+    echo "합계 : ".$_POST['sum']."<br>";
+    echo "평균 : ".$_POST['avg']."<br>";*/
+   if($result)
+       echo "<br>".$_POST['name']." 의 성적이 입력되었습니다.<br>";
+   echo"
+    <input type=button value='홈으로 돌아가기'></input>
+    ";
+       $prevPage = $_SERVER['HTTP_REFERER'];
+       header('location:$prevPage');
+?>

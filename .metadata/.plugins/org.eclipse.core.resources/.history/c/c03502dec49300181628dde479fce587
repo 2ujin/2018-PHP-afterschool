@@ -1,0 +1,34 @@
+<?php
+$connect = mysql_connect("localhost","jin","1234");
+mysql_select_db("mirim", $connect);
+
+//print($_POST['name']."님의 성적이 입력되었습니다."."<br/>");
+print($_POST['sub1']."<br/>");
+print($_POST['sub2']."<br/>");
+print($_POST['sub3']."<br/>");
+print($_POST['sub4']."<br/>");
+print($_POST['sub5']."<br/>");
+print($_POST['sum']."<br/>");
+print($_POST['avg']."<br/>");
+
+
+$sub1 = $_POST['sub1'];
+$sub2 = $_POST['sub2'];
+$sub3 = $_POST['sub3'];
+$sub4 = $_POST['sub4'];
+$sub5 = $_POST['sub5'];
+
+$sum = $sub1 + $sub2 + $sub3 + $sub4 + $sub5;
+$avg = ($sub1 + $sub2 + $sub3 + $sub4 + $sub5)/5;
+
+
+$conn = mysql_connect("localhost", "jin", "1234");//mysql에 접근
+$dbconn =mysql_select_db("mirim", $conn);
+
+
+$result = mysql_query($sql, $conn);
+if($result)
+    echo "<br>".$_POST['name']."의  성적이 입력되었습니다.<br>";
+    
+    
+?>

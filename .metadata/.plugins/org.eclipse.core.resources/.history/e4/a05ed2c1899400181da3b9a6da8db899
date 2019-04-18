@@ -1,0 +1,12 @@
+<?php
+$pFile = fopen("mirim.txt", "r");
+
+if($pFile)
+    echo "파일 열기 성공";
+else 
+    echo "파일 열기 실패";
+
+$data = fread($pFile, 15); 
+echo "실행 결과 : $data";
+fclose($pFile);
+?>

@@ -1,0 +1,8 @@
+<?php
+
+$source = "mirim.txt";
+$dest = "inter.txt"; //¸ñÀûÁö
+
+$pFile = fopen("mirim.txt", "w");
+$data = "";
+?>

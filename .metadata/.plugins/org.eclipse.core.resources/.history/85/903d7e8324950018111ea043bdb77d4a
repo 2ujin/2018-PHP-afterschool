@@ -1,0 +1,6 @@
+<?php
+$uid = setcookie("userid", "jin");
+$name = setcookie("username", "ÀÌÀ¯Áø");
+$password = setcookie("userpasswd", "13579");
+
+?>

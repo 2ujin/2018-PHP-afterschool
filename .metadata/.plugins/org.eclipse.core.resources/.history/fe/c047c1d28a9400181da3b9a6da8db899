@@ -1,0 +1,12 @@
+<?php
+
+$source = "mirim.txt";
+$dest = "mirim_copy.txt"; //목적지
+
+$result = copy($source, $dest);
+
+if($result)
+    echo "파일 복사 성공 했ㄷㅇ";
+$pFile = fopen("mirim.txt", "w");
+$data = "";
+?>

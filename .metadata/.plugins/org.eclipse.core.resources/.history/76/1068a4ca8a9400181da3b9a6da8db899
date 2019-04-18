@@ -1,0 +1,10 @@
+<?php
+
+$source = "mirim.txt";
+$dest = "mirim_copy.txt"; //¸ñÀûÁö
+
+$result = copy($source, $dest);
+
+$pFile = fopen("mirim.txt", "w");
+$data = "";
+?>

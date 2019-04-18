@@ -1,0 +1,25 @@
+<?php 
+session_start();
+
+$id = $_POST[id];
+$id = $_POST[];
+
+if(!$id){ //아이디 입력 에러 처리
+    
+}
+if(!$pass){ //비밀번호 입력 에러 처리
+    
+}
+
+include '../lib/dbconn.php';
+
+$sql = "select * from member where id = '$id'"
+
+unset($_SESSION[userid]);
+unset($_SESSION[username]);
+unset($_SESSION[usernick]);
+unset($_SESSION[userleve]);
+
+echo "<script>location.href = '../index.php'</script>";
+
+?>

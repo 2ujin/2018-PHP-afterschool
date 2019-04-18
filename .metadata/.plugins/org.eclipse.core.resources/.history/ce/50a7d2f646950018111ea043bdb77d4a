@@ -1,0 +1,23 @@
+<? 
+$conn = mysql_connect("localhost","jin","1234") or die("database connect fail...");
+$dbconn = mysql_select_db("mirim",$conn);
+
+// echo "¾ÆÀÌµð: ".$_POST['id']."<br>";
+//$today = getdate(   );
+
+//$regist_day = $today.date('Y-m-d(H:i:s)', $_SESSION[time]);
+
+$id = $_POST['id'];
+$pass = $_POST['pass'];
+$name = $_POST['name'];
+$nick = $_POST['nick'];
+$hp1 = $_POST['hp1'];
+$email1 = $_POST['email1'];
+
+$sql = "insert into member (id, pass, name, nick, hp1, email1)
+values('$id','$pass','$name','$nick','$hp1','$email1');";
+
+mysql_query($sql, $conn);
+mysql_close($conn);
+
+?>

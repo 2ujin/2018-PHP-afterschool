@@ -1,0 +1,23 @@
+<?php
+$i = 3;
+$j = 0;
+for ($j; $j<9; $j++){
+echo "$i x $j";
+}
+
+
+echo "<h4>3단 구구단 표 만들기<h4><hr>";
+echo"
+<table border = '1'>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+<th width = '160'>이야</th>
+</table>
+";
+?>

@@ -1,0 +1,6 @@
+<?php
+$sql = "insert into board (title, content)
+values('$title', '$content'); ";
+
+$result = mysql_query($sql);
+?>

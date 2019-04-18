@@ -1,0 +1,9 @@
+<? 
+
+
+
+
+$_SESSION[userid] = $userid;
+$_SESSION[username] = $username;
+
+?>

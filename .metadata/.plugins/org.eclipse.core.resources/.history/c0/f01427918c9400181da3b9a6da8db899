@@ -1,0 +1,10 @@
+<?php
+//counter
+$fname = "counter.txt";
+
+if(!file_exists($fname)){ //파일 미 존재시
+    touch($fname); //파일 접근 및 수정
+    $pFile = foppen($fname,"r+");
+    $data = "";
+}
+?>

@@ -1,0 +1,14 @@
+<?php
+$number = 50;
+
+echo"
+<h4>50~500 짝수의 합 - do~while문 </h4><hr>
+";
+do{
+    if($number%10==0){print "<br>";}
+    if($number%2 == 0){
+          echo"$number ";
+    }
+    
+}while($number++ < 500);;
+?>

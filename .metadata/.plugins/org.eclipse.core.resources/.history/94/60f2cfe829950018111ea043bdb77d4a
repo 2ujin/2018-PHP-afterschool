@@ -1,0 +1,11 @@
+<?php
+session_start(); //항상 맨 처음에 설정
+
+echo "세션 시작 <hr>";
+
+$_SESSION[userid] = 'jin';
+$_SESSION[username] = '이유진';
+$_SESSION[userpw] = '010930';
+
+
+?>

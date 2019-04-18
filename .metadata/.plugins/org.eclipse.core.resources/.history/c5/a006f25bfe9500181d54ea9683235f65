@@ -1,0 +1,9 @@
+<title>Create Table</title>
+<?
+echo("<h4>memo & memo_ripple 테이블 생성</h4><hr>");
+
+$sql = "create table memo
+    ";
+
+$sql = "";
+?>

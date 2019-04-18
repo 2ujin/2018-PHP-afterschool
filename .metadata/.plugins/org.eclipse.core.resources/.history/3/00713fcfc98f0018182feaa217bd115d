@@ -1,0 +1,5 @@
+<?php
+echo"<h4>array() 함수 이용 - 문자 출력</h4><hr>";
+$num = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+
+?>

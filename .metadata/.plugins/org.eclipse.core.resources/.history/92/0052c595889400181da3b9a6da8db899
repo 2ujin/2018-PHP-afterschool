@@ -1,0 +1,3 @@
+<?php
+$pFile = fopen("mirim.txt","a");'
+?>

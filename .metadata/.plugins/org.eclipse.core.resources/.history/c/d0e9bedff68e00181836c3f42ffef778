@@ -1,0 +1,17 @@
+<?php
+echo "<h4>점수에 따른 학점 판별</h4><hr>";
+$score = 93;
+if($score>=90 && $score<=100){
+   echo "A";
+}
+else if ($score>=89 && $score<=80){
+    echo "A";
+}
+else if ($score>=79 && $score<=70){
+    echo "B";
+}
+else if ($score>=90 && $score<=60){
+    echo "A";
+}
+
+?>

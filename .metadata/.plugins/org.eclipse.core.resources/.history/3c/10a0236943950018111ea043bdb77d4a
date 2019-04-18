@@ -1,0 +1,19 @@
+<? 
+$conn = mysql_connect("localhost","jin","1234") or die("database connect fail...");
+$dbconn = mysql_select_db("mirim",$conn);
+
+// echo "¾ÆÀÌµð: ".$_POST['id']."<br>";
+
+$id = $_POST['id'];
+$pass = $_POST['pass'];
+$name = $_POST['name'];
+$nick = $_POST['nick'];
+$hp1 = $_POST['hp1'];
+$email1 = $_POST['email1'];
+
+$sql = "insert into member (id, pass,name, nick, hp1, email1)
+values('$id','$pass','$pass_confirm','$name','$nick','$hp1','$hp2','$email1');";
+$result = mysql_query($sql, $conn);
+mysql_close($conn);
+
+?>

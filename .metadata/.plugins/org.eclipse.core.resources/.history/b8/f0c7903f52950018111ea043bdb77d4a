@@ -1,0 +1,11 @@
+<? 
+
+
+
+
+$_SESSION[userid] = $userid;
+$_SESSION[username] = $username;
+$_SESSION[usernick] = $usernick;
+
+echo "<script>location.href = '../index.php'</script>";
+?>

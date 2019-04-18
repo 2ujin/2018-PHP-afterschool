@@ -1,0 +1,4 @@
+<?php
+$pFile = fopen("mirim.txt", "r");
+$data = fread($pFile, 15);
+?>

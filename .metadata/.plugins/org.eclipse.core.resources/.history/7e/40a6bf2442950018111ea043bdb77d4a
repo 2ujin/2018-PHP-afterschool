@@ -1,0 +1,23 @@
+<? 
+$conn = mysql_connect("localhost","jin","1234") or die("database connect fail...");
+$dbconn = mysql_select_db("mirim",$conn);
+
+// echo "아이디: ".$_POST['id']."<br>";
+
+$id = $_POST['id'];
+$pass = $_POST['pass'];
+$pass_confirm = $_POST['pass_confirm'];
+$name = $_POST['name'];
+$nick = $_POST['nick'];
+$hp1 = $_POST['hp1'];
+$hp2 = $_POST['hp2'];
+$email1 = $_POST['email1'];
+
+$sql = "insert into member (id, pass, pass_confirm, name, nick, hp1, hp2, email1)
+values('$id','$pass','$pass_confirm','$name','$nick','$hp1','$hp2','$email1');
+";
+$result = mysql_query($sql, $conn);
+
+if($result)
+    echo "<br>".$_POST['name']." 의 성적이 입력되었습니다.<br>";
+?>

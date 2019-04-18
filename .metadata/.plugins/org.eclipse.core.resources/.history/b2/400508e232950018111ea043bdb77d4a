@@ -1,0 +1,16 @@
+<meta charset = "euc-kr">
+<?
+    if($id){
+        echo "아이디를 입력하세요.";
+    }
+    else{
+        include "../lib/dbconn.php";
+        
+        $sql = "";
+        
+        if($result_record){
+            echo "아이디가 중복됩니다!<br>";
+        }
+    }
+?>
+

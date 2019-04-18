@@ -1,0 +1,13 @@
+<?php
+$conn = mysql_connect("localhost","jin","1234");
+mysql_select_db("mirim", $conn);
+
+// DB 테이블에서 num 필드의 값으로 $num 의 값을 가지는
+// 레코드 삭제
+$sql = "delete from student2 where num = $num";
+mysql_query($sql, $conn);
+
+mysql_close($conn);
+
+// 레코드를 삭제하고 다시 student_list.php 로 돌아감
+Header("Location:ch06_insert.php"); 

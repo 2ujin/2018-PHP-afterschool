@@ -1,0 +1,6 @@
+<?
+   include "../lib/dbconn.php";
+   
+   $num = $_GET[num];
+   $sql = "";
+?>

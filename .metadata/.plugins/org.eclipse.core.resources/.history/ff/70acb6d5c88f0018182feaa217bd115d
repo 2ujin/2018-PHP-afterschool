@@ -1,0 +1,8 @@
+<?php
+echo"foreach문 - 일반배열<hr>";
+
+$num = array(11,22,33,44,55);
+
+foreach($num as $value)
+    echo"변수 $value<br> ";
+?>

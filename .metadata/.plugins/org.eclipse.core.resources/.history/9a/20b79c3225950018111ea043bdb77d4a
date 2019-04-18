@@ -1,0 +1,7 @@
+<?php
+$userid = $_COOKIE[userid];
+echo "userid : $userid <br>";
+echo "username : $username <br>";
+echo "userpasswd : $userpasswd";
+
+?>

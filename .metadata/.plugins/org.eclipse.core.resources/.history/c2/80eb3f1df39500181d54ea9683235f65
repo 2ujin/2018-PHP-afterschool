@@ -1,0 +1,21 @@
+<?
+$conn = mysql_connect("localhost","jin","1234") or die("database connect fail...");
+$dbconn = mysql_select_db("mirim",$conn);
+
+$sql = "update member set 'pass' = '$pass','name' = '$name', 'nick' = '$nick', hp = '$hp', email = '$email' where 'id' = '$id'";
+
+mysql_query($sql, $conn);
+
+if($result){
+    echo "<script>
+                window.alert('정보수정에 실패했습니다.');
+                history.go(-1)
+            </script>";
+}else{
+    echo "<script>
+                window.alert('정보 수정에 실패했습니다.');
+                history.go(-1)
+            </script>";
+}
+//update member set name = '', nick = ''
+?>

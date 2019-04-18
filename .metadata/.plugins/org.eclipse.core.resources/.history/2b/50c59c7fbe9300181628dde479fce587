@@ -1,0 +1,9 @@
+<?php
+print($_POST['name']."<br/>");
+print($_POST['sub1']."<br/>");
+print($_POST['sub2']."<br/>");
+print($_POST['sub3']."<br/>");
+print($_POST['sub4']."<br/>");
+print($_POST['sub5']."<br/>");
+
+?>

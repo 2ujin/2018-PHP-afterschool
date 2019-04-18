@@ -1,0 +1,23 @@
+<?php
+$connect = mysql_connect("localhost","jin","1234");
+mysql_select_db("mirim", $connect);
+
+$name = $_POST['name'];
+$sub1 = $_POST['sub1'];
+$sub2 = $_POST['sub2'];
+$sub3 = $_POST['sub3'];
+$sub4 = $_POST['sub4'];
+$sub5 = $_POST['sub5'];
+
+$sum = $sub1 + $sub2 + $sub3 + $sub4 + $sub5;
+$avg = ($sub1 + $sub2 + $sub3 + $sub4 + $sub5)/5;
+
+$sql = "insert into stud_score (name, sub1, sub2, sub3, sub4, sub5, sum, avg)
+    values('$name',$sub1,$sub2,$sub3,$sub4,$sub5,$sum,$avg)";
+$result = mysql_query($sql, $conn);
+
+if($result)
+    echo "<br>".$_POST['name']."의  성적이 입력되었습니다.<br>";
+    
+    
+?>

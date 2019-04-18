@@ -1,0 +1,5 @@
+<?php
+session_start(); //항상 맨 처음에 설정
+
+echo "세션 시작 <hr>";
+?>

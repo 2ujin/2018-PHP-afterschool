@@ -1,0 +1,6 @@
+<?php
+echo "userid : $userid <br>";
+echo "username : $username <br>";
+echo "userpasswd : $userpasswd";
+
+?>

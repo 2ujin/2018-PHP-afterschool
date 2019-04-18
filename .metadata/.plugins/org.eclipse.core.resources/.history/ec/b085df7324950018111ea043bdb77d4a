@@ -1,0 +1,3 @@
+<?php
+$uid = setcookie("userid", "jin");
+?>

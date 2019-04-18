@@ -1,0 +1,15 @@
+<?php
+
+echo "날짜 및 시간 함수";
+
+$today = getdate();
+
+foreach($today as $key=>$value)
+    echo $key."===>".$value."<br>";
+
+    echo "<hr>";
+    
+    echo "오늘 날짜 : $today[year]년 $today[mon]월 $today[mday]일 $today[weekday] ";
+    echo "지금 시간 : 9시 21분 50초";
+    
+    ?>

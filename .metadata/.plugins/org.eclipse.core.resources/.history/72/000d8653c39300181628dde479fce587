@@ -1,0 +1,14 @@
+<?php
+$connect = mysql_connect("localhost","jin","1234");
+mysql_select_db("mirim", $connect);
+
+print($_POST['name']."님의 성적이 입력되었습니다."."<br/>");
+print($_POST['sub1']."<br/>");
+print($_POST['sub2']."<br/>");
+print($_POST['sub3']."<br/>");
+print($_POST['sub4']."<br/>");
+print($_POST['sub5']."<br/>");
+print($_POST['sum']."<br/>");
+print($_POST['avg']."<br/>");
+
+?>

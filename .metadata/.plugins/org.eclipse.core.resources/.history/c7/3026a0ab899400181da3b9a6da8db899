@@ -1,0 +1,6 @@
+<?php
+$pFile = fopen("mirim.txt", "r");
+$data = fread($pFile, 15); 
+echo "실행 결과 : $data";
+fclose($pFile);
+?>

@@ -1,0 +1,13 @@
+<?php
+
+echo "날짜 및 시간 함수";
+
+$today = getdate();
+
+foreach($today as $key=>$minutes)
+    echo $key."===>".$minutes."<br>";
+
+    echo "<hr>";
+    
+    echo "오늘은 ";
+?>

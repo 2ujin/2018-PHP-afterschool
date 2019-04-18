@@ -1,0 +1,8 @@
+<?php
+echo "<h4>3단 구구단 표 만들기<h4><hr>";
+echo"
+<table border = '1'>
+<th width = '10'>이야</th>
+</table>
+";
+?>

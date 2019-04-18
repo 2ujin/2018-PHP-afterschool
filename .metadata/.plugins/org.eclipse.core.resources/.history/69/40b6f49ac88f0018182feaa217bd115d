@@ -1,0 +1,3 @@
+<?php
+echo"foreach문 - 일반배열";
+?>

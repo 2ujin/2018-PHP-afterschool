@@ -1,0 +1,11 @@
+<?php
+
+echo "날짜 및 시간 함수";
+
+$today = getdate();
+
+foreach($today as $key=>$value)
+    echo $key."===>".$value."<br>";
+
+    echo "<hr>";
+?>

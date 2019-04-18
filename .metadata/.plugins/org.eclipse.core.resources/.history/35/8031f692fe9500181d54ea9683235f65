@@ -1,0 +1,17 @@
+<title>Create Table</title>
+<?
+echo("<h4>memo & memo_ripple 테이블 생성</h4><hr>");
+
+include "..memo.php";
+//메모 테이블 생성
+$sql = "create table memo
+    num int not null auto_increment,
+    id char(15) not null,  
+    name char(10) not null,
+    nick char(10),
+    content text,
+    regist_day char(20)
+    primary_key(num)";
+
+$sql = ""; 
+?>

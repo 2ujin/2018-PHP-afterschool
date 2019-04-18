@@ -1,0 +1,19 @@
+<?php
+echo"<h4>array() 함수 이용 - 문자 출력</h4><hr>";
+$day = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+
+foreach($day as $value)
+    echo"$value  ";
+
+echo"<h4>sort() 함수 이용 - 문자 출력</h4><hr>";
+sort($day);
+
+foreach($day as $value)
+    echo"$value  ";
+echo "<p><h4>과일 - sort() 함수를 이용한 문자 정렬</h4><hr>";
+
+
+$fruit = array("watermelon", "orange", "apple", "banana", "straberry", "tomato", "peach");
+sort($fruit);
+ 
+    ?>

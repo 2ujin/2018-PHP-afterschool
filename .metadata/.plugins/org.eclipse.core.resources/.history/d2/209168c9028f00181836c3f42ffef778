@@ -1,0 +1,24 @@
+// <?php
+//     $rows = 3;
+//     echo "<h4>{$rows}단 구구단 표 만들기</h4><hr>";
+//     echo "<table border = '1' width = 100>";
+    
+//     $cols = 1;
+    
+//     while($cols <= 9){
+//         $mul = $rows * $cols;
+//         echo "<tr><td align = center>$rows * $cols = $mul</td></tr>";
+//         $cols ++;
+//     }
+    
+//     echo "</table>";
+            
+// ?>
+
+<?php
+$i = 1;
+
+while ($i < 10){
+    $result = $i * $j;
+}
+?>

@@ -1,0 +1,4 @@
+<?php
+$pFile = fopen("mirim.txt","a");
+$data = "HELLO WELCOME TO THE PHP WORLD";
+?>

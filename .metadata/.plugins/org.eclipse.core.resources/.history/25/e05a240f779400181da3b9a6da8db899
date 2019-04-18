@@ -1,0 +1,10 @@
+<?php
+$mydb = mysql_connect("localhost", "jin", "1234") or die ("MySQL 접속 실패");
+if( !mysql_select_db("mirim",$mydb)) die("DB 선택 불가");
+
+$sql = "insert into board (title, content)
+values('$title', '$content'); ";
+
+$result = mysql_query($sql);
+
+?>

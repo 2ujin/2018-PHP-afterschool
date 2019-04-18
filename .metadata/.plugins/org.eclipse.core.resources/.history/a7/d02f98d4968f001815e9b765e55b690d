@@ -1,0 +1,14 @@
+<?php
+//while문 사용해서 101~300 4의 배수 출력
+$number = 101;
+echo"
+<h4>101~300 4의 배수 - while문<h4><hr>
+";
+while ($number<=300) {
+   if($number%4==0){
+         if($number%10==0){print "<br>";}
+    echo "$number ";
+    }
+    $number ++;
+}
+?>

@@ -1,0 +1,12 @@
+<html>
+<h4>미니게시판</h4><hr>
+<table  width = "60" cellspacing="1" cellpaddding="4">
+<tr><td>제목</td><td><input type = text size = 60 id = title></input></td></tr>
+<tr><td valign = "middle">내용</td><td><textarea name = "content" cols = "60" rows = "10">내용 입력</textarea></td></tr>
+<tr><td colspan = "2" ><input type = "submit" value = "글 올리기" id = "submit"><input type="submit" value = "취소" id = "cancel"></td></tr>
+</table>
+</html>
+
+<?php
+
+?>

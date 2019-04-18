@@ -1,0 +1,43 @@
+<?php
+echo "<h4>새로운 계정 생성</h4><hr>";
+$conn=mysql_connect("localhost","root","apmsetup");
+mysql_select_db("mysql",$conn);
+
+echo " mysql DBMS와의 연동성공";
+echo ("1.새로운 DB 생성<p>");
+
+$sql = "create database mirim;";
+$result = mysql_query($sql);
+
+if($result)
+    echo ("1.새로운 DB 생성성공<p>");
+else 
+    echo ("1.새로운 DB 생성실패<p>");
+
+$sql = "insert into user (host, user, password)values ('localhsot', 'youjin', password('1234'));";
+$result = mysql_query($sql);
+
+if($result)
+    echo ("2. user 테이블에 user, password 삽입성공");
+    else
+        echo ("2. user 테이블에 user, password 실패..실패..");
+
+        echo "<br>";
+        
+$sql = "insert into db values('localhost','mirim','youjin','y','y','y','y','y','y','y','y','y','y','y','y','y','y','y','y','y','y','y');";
+$result = mysql_query($sql);
+
+if($result)
+    echo ("3. db 테이블에 사용권한 등록성공");
+    else
+        echo ("3.db 테이블에 사용권한 등록 실패..실패..");
+
+        echo "<br>";
+$sql = "flush privileges;";
+$result = mysql_query($sql);
+
+if($result)
+    echo ("4. user 테이블과 db 테이블에 변경된 내용 적용까지 성공");
+    else
+        echo ("4.user 테이블과 db 테이블에 변경된 내용 적용 실패..실패..");
+?>

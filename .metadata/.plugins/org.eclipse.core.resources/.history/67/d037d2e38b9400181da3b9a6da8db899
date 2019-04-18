@@ -1,0 +1,8 @@
+<?php
+//counter
+$fname = "counter.txt";
+
+if(!file_exists($fname)){
+    touch()
+}
+?>

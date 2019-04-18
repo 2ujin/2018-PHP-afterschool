@@ -1,0 +1,6 @@
+<?php
+echo "<table border = 1></table>";
+echo "<h4>삼각형  * 출력 1</h4>
+<hr>
+";
+?>

@@ -1,0 +1,15 @@
+<?php
+echo "<h4>삼각형  * 출력 1</h4>
+<hr>
+";
+
+echo"
+<table border = '1'>
+<tr>";
+for($i=1; $i<=10; $i++){
+    echo"*";
+}
+echo"</tr>
+</table>
+";
+?>

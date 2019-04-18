@@ -1,0 +1,10 @@
+<?php
+$i = 0;
+$result = 1;
+echo "<h4>10! Ãâ·Â - For¹®</h4><hr>";
+
+for($i; $i<=10; $i++){
+    $result *= $i;
+}
+echo "$result";
+?>

@@ -1,0 +1,6 @@
+<title>Create Table</title>
+<?
+echo("<h4>member 테이블 생성</h4><hr>");
+$sql = "";
+
+?>

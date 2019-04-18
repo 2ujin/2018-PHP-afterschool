@@ -1,0 +1,17 @@
+<?php
+echo "È¦¼öÂ¦¼ö ÆÇº° <hr>";
+$num = 50;
+$num1 = 75;
+
+if($num%2==1){
+   echo "È¦¼ö <br>";
+}else{
+    echo "Â¦¼ö";
+}
+
+if($num1%2==1){
+    echo "È¦¼ö";
+}else{
+    echo "Â¦¼ö";
+}
+?>
